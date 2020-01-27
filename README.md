@@ -4,7 +4,7 @@
 <br/><br/><br/>
 # Entrega 2 - MVC películas
 
-Versión: 22 de Enero de 2020
+Versión: 27 de Enero de 2020
 
 ## Objetivos
 
@@ -16,7 +16,7 @@ Versión: 22 de Enero de 2020
 Esta entrega se basa en el desarrollo de una aplicación web de cliente usando las príncipales tecnologías web (HTML, CSS y JS) y el patrón MVC. La aplicación consiste en una base de datos de películas, en la que se almacena el título, director y URL de la carátula de cada película. En esta base de datos se puede consultar la información de las películas, añadir películas nuevas, editar las existentes, borrarlas y reiniciar la base de datos. Estas acciones se llevan a cabo al hacer clic en los distintos botones que proporciona la aplicación web.
 
 <p align="center">
-  <img width="568" height="320"  src="https://raw.githubusercontent.com/sonsoleslp/MVC_peliculas/master/files/enunciado.png">
+  <img width="568" height="320"  src="https://raw.githubusercontent.com/CORE-2020/Entrega2_MVC_Cliente/master/files/enunciado.png">
 </p>
 
 En el código proporcionado sólo está implementada la funcionalidad de listar las películas existentes y editar película. El alumno debe implementar las funcionalidades restantes (crear, mostrar, eliminar y reiniciar).
@@ -26,12 +26,12 @@ En el código proporcionado sólo está implementada la funcionalidad de listar 
 El proyecto debe clonarse en el ordenador desde el que se está trabajando:
 
 ```
-$ git clone https://github.com/sonsoleslp/MVC_peliculas
+$ git clone https://github.com/CORE-2020/Entrega2_MVC_Cliente
 ```
 A continuación se debe acceder al directorio de trabajo y abrir el fichero index.html con el editor de la elección del alumno.
 
 ```
-$ cd MVC_peliculas
+$ cd Entrega2_MVC_Cliente
 ```
 
 El fichero index.html contiene el código de la aplicación. Incluye tanto el HTML de la página, como el CSS y el código JavaScript que implementa la lógica de la aplicación siguiendo el patrón MVC. En las siguientes secciones se explica cada parte de esta lógica.
