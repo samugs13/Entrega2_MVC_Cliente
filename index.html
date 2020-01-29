@@ -53,12 +53,13 @@
               view += `
                 <div class="movie">
                    <div class="movie-img">
-                        <img class="show" data-my-id="${i}" src="${peliculas[i].miniatura}" onerror="this.src='files/placeholder.png'"/>
+                        <img data-my-id="${i}" src="${peliculas[i].miniatura}" onerror="this.src='files/placeholder.png'"/>
                    </div>
                    <div class="title">
                        ${peliculas[i].titulo || "<em>Sin título</em>"}
                    </div>
                    <div class="actions">
+                        <!--Insertar aquí botones de "Show" y "Delete"-->
                        <button class="edit" data-my-id="${i}">editar</button>
                     </div>
                 </div>\n`;

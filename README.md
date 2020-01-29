@@ -4,7 +4,7 @@
 <br/><br/><br/>
 # Entrega 2 - MVC películas
 
-Versión: 27 de Enero de 2020
+Versión: 29 de Enero de 2020
 
 ## Objetivos
 
@@ -34,7 +34,7 @@ A continuación se debe acceder al directorio de trabajo y abrir el fichero inde
 $ cd Entrega2_MVC_Cliente
 ```
 
-El fichero index.html contiene el código de la aplicación. Incluye tanto el HTML de la página, como el CSS y el código JavaScript que implementa la lógica de la aplicación siguiendo el patrón MVC. En las siguientes secciones se explica cada parte de esta lógica.
+El fichero index.html contiene el código de la aplicación. Incluye tanto el HTML de la página, como el CSS y el código JavaScript que implementa la lógica de la aplicación siguiendo el patrón MVC. Para iniciar la aplicación web basta con abrir el fichero index.html en el navegador (Chrome/Firefox). En las siguientes secciones se explica cada parte de esta lógica.
 
 ## Modelo de datos
 
@@ -49,7 +49,7 @@ El array que contiene las películas se almacena en el localStorage del navegado
 ## Vistas
 Las vistas generan el código HTML que se inserta en el bloque `<div id=“main”></div>`, como respuesta a los eventos que la aplicación recibe. Son funciones JavaScript que generan dinámicamente el código HTML de cada pantalla de la aplicación en función de los parámetros recibidos. Las vistas con las que cuenta la aplicación son las siguientes:
 
-- **``indexView(peliculas)``**: Es la vista principal de la aplicación. Recibe como parámtero el array con todas las películas y genera el código HTML necesario para mostrar todas las películas con su título y miniatura, así como los botones que lanzan las diferentes acciones que se pueden aplicar sobre las mismas.
+- **``indexView(peliculas)``**: Es la vista principal de la aplicación. Recibe como parámetro el array con todas las películas y genera el código HTML necesario para mostrar todas las películas con su título y miniatura, así como los botones que lanzan las diferentes acciones que se pueden aplicar sobre las mismas actualmente. Falta añadir los botones correspondientes a las acciones a implementar por el alumno.
 - **`editView(i, pelicula)`**: Es la vista que permite editar la información sobre una película existente. Recibe como parámetro la posición que ocupa la película en el array y el objeto que contiene la información de la película. Renderiza un formulario que permite editar dicha información
 
 Existen dos vistas adicionales que están incompletas y que el alumno debe implementar:
@@ -80,7 +80,7 @@ Se encarga de asociar los eventos de clic del usuario con los controladores adec
 - **``edit``**: La clase `edit` la tienen los botones de "Editar" que se muestran bajo el título de cada película en la vista principal. Estos botones permiten editar la información de cada película llamando a `editContr` y pasándole la posición en el array de películas de la película que se desea mostrar a través del atributo `data-my-id` del botón. 
 - **``update``**: La clase `update` la tiene el botón de "Actualizar" película, que muestra el formulario de edición de cada película. Llama al controlador `updanteContr`, pasándole como parámetro el atributo `data-my-id` del botón.
 
-El alumno debe implementar los cuatro eventos que faltan. Para ello debe añadir los botones que lanzan dichos eventos y asociarlos al controlador correspodiente en el router. Para poder recoger los eventos en el router, los botones deben incluir las siguientes clases:
+El alumno debe implementar los cinco eventos que faltan. Para ello debe añadir los botones que lanzan dichos eventos y asociarlos al controlador correspodiente en el router. Para poder recoger los eventos en el router, los botones deben incluir las siguientes clases:
 
 - **``show``**: Se debe agregar un botón con el contenido "Ver" y la clase `show` bajo el título de cada película en la vista principal (delante de "Editar"). Al hacer clic sobre estos botones, se debe llamar al controlador que muestra la información detallada de cada película. Deben incluir el atributo necesario para poder recoger la posición de la película que se desea visualizar y así poder pasársela al controlador correspondiente.
 - **``new``**: Se debe agregar un botón con el contenido "Añadir" y la clase `new` dentro del div con clase 'actions' de la vista principal. Al hacer clic sobre él, debe llamarse al controlador que muestra el formulario de creación de una nueva película, llamando al controlador correspondiente.
@@ -90,7 +90,7 @@ El alumno debe implementar los cuatro eventos que faltan. Para ello debe añadir
 
 ## Tareas
 
-Se pide modificar el código proporcionado para completar las cuatro funcionalidades que están incompletas:
+Se pide modificar el código proporcionado para completar las cinco funcionalidades que están incompletas:
 
 - **Show**: Mostrar información sobre la película. 
 
@@ -154,4 +154,3 @@ La herramienta de autocorrección preguntará por el correo del alumno y el toke
 
 Si pasa todos los tests se dará la máxima puntuación.
 
-**¡Cuidado! Una vez enviadas, tanto la entrega, como la evaluación, no se pueden cambiar.**   
