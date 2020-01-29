@@ -153,5 +153,3 @@ La herramienta de autocorrección preguntará por el correo del alumno y el toke
 -  **20%:** La funcionalidad de "Reset" funciona correctamente.
 
 Si pasa todos los tests se dará la máxima puntuación.
-
-**¡Cuidado! Una vez enviadas, tanto la entrega, como la evaluación, no se pueden cambiar.**   
