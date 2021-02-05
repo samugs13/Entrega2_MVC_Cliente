@@ -4,7 +4,7 @@
 <br/><br/><br/>
 # Entrega 2 - MVC películas
 
-Versión: 29 de Enero de 2020
+Versión: 5 de Febrero de 2021
 
 ## Objetivos
 
